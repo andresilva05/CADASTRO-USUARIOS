@@ -1,4 +1,17 @@
-import styled from "styled-components";
+import styled,{ createGlobalStyle } from "styled-components";
+
+
+export const GlobalStyle = createGlobalStyle `
+
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+`
+
 
 export const Container = styled.div`
   background-color: #181f36;
@@ -6,7 +19,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px;
   height: 100vh;
 `;
 
