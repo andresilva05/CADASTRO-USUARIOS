@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-  const Background = styled.div`
+ export const Background = styled.div`
   background: linear-gradient(to right, #fe7e5d, #7f3841);
   height: 30vh;
   width: 90vw;
@@ -16,4 +16,3 @@ import styled from "styled-components";
   }
 `;
 
-export default Background
