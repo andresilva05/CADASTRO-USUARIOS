@@ -67,7 +67,7 @@ export const TrashIcon = styled.img`
   }
 `;
 
-export const Avatar = styled.img`
+export const AvatarUser = styled.img`
   height: 80px;
   border-radius: 50%; /* Faz o avatar ficar circular */
 `;
