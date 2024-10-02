@@ -11,7 +11,7 @@ import {
 } from "./styles"; // Importa componentes estilizados definidos em um arquivo de estilos.
 
 import Button from "./components/Button/styles"; // Importa o componente Button.
-import TopBackground from "./components/TopBackground/styles"; // Importa o componente TopBackground.
+import TopBackground from "./components/TopBackground"; // Importa o componente TopBackground.
 import { useNavigate } from "react-router-dom";
 
 function Home() {
