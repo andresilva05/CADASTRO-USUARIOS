@@ -3,11 +3,10 @@ import { useNavigate } from "react-router-dom"; // Importa useNavigate para nave
 import api from "../services/api";
 
 import Button from "../components/Button/styles"; // Importa o componente de botão estilizado.
-import TopBackground from "../components/TopBackground/styles"; // Importa o componente TopBackground estilizado.
+import TopBackground from "../components/TopBackground"; // Importa o componente TopBackground estilizado.
 import Trash from '../assets/trash.svg';
-import AvatarUser from '../ListUsers'
 
-import { Container, Title, ContainerUsers, CardUsers, TrashIcon } from "./styles"; // Certifique-se de que está importando do local correto
+import { Container, Title, ContainerUsers, CardUsers, TrashIcon,AvatarUser } from "./styles"; // Certifique-se de que está importando do local correto
 
 function ListUsers() {
     // Define o componente funcional ListUsers.
@@ -50,7 +49,7 @@ function ListUsers() {
                 <ContainerUsers>
                     {users.map((user) => (
                         <CardUsers key={user.id}> {/* Chave agora está no CardUsers */}
-                            {/* <AvatarUser src={`https://avatar.iran.liara.run/public?username=${user.id}`}/> */}
+                            <AvatarUser src={`https://avatar.iran.liara.run/public?username=${user.id}`}/>
                             <div>
                                 <p>{user.name}</p>
                                 <p>{user.email}</p>
